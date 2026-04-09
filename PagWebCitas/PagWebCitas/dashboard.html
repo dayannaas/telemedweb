@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body onload="cargarUsuario()">
+
+<!-- HEADER -->
+<div class="header">
+    <div>
+        <h2 id="bienvenida">¡Bienvenido!</h2>
+        <p>¿En qué podemos ayudarte hoy?</p>
+    </div>
+
+    <button id="btnSalir" onclick="logout()">Salir</button>
+</div>
+
+<!-- CARDS -->
+<div class="container">
+
+    <a href="citas.html" class="card">
+        <div class="icon azul">📅</div>
+        <p>Mis Citas</p>
+    </a>
+
+    <a href="historia.html" class="card">
+        <div class="icon morado">📄</div>
+        <p>Historia Clínica</p>
+    </a>
+
+    <a href="recetas.html" class="card">
+        <div class="icon naranja">💊</div>
+        <p>Recetas</p>
+    </a>
+
+    <a href="mensajes.html" class="card">
+        <div class="icon verde">💬</div>
+        <p>Mensajes</p>
+    </a>
+
+    <a href="soporte.html" class="card">
+        <div class="icon rosa">📞</div>
+        <p>Contacto</p>
+    </a>
+
+    <a href="perfil.html" class="card">
+        <div class="icon teal">👤</div>
+        <p>Mi Perfil</p>
+    </a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

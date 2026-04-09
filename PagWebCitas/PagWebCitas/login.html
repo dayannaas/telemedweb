@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <div class="icon" id="iconLogin">🩺</div>
+
+    <h1 id="tituloLogin">TeleMed</h1>
+    <p class="sub">Tu salud a un clic de distancia</p>
+
+    <label for="loginCorreo">Correo electrónico</label>
+    <input id="loginCorreo" placeholder="tu@email.com">
+
+    <label for="loginPassword">Contraseña</label>
+    <input id="loginPassword" type="password" placeholder="••••••••">
+
+    <button id="btnIngresar" onclick="login()">Ingresar</button>
+
+    <p id="loginMensaje"></p>
+
+    <p class="registro">
+      ¿No tienes cuenta? 
+      <a id="linkRegistro" href="registro.html">Regístrate</a>
+    </p>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

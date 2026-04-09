@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Contacto</title>
+<link rel="stylesheet" href="soporte.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <button id="btnVolver" onclick="window.location='dashboard.html'">← Volver</button>
+    <h2>Contacto y Soporte</h2>
+</div>
+
+<!-- CONTENEDOR -->
+<div class="container">
+
+    <div class="card">
+
+        <!-- ICONO -->
+        <div class="icono">📞</div>
+
+        <h3>¿Necesitas ayuda?</h3>
+        <p class="sub">Escríbenos y te responderemos pronto</p>
+
+        <!-- FORM -->
+        <label>Nombre</label>
+        <input id="soporteNombre" type="text">
+
+        <label>Correo electrónico</label>
+        <input id="soporteCorreo" type="email">
+
+        <label>Mensaje</label>
+        <textarea id="soporteMensaje"></textarea>
+
+        <!-- BOTÓN -->
+        <button id="btnEnviar" onclick="enviarSoporte()" class="btn-enviar">
+            Enviar Mensaje
+        </button>
+
+        <!-- RESPUESTA -->
+        <p id="soporteRespuesta"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

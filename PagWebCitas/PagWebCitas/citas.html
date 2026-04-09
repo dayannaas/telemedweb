@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Citas</title>
+<link rel="stylesheet" href="citas.css">
+</head>
+
+<body onload="mostrarCitas()">
+
+<!-- HEADER -->
+<div class="header">
+    <button id="btnVolver" onclick="window.location='dashboard.html'">← Volver</button>
+    <h2>Mis Citas</h2>
+</div>
+
+<div class="container">
+
+    <!-- BOTON -->
+    <button id="btnMostrarForm" class="btn-agendar" onclick="toggleForm()">
+        + Agendar Nueva Cita
+    </button>
+
+    <!-- FORMULARIO -->
+    <div id="formCita" class="card hidden">
+
+        <h3>Nueva Cita Médica</h3>
+
+        <div class="grid">
+            <div>
+                <label>Fecha</label>
+                <input id="citaFecha" type="date">
+            </div>
+
+            <div>
+                <label>Hora</label>
+                <input id="citaHora" type="time">
+            </div>
+
+            <div>
+                <label>Especialidad</label>
+                <select id="citaEspecialidad">
+                    <option>Medicina General</option>
+                    <option>Cardiología</option>
+                    <option>Dermatología</option>
+                    <option>Neurología</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="btnAgendar" onclick="agendarCita()" class="btn-confirmar">
+            Confirmar Cita
+        </button>
+        
+        <button id="btnCerrarForm" onclick="cerrarForm()" class="btn-cerrar">
+        Cerrar
+        </button>
+
+        <p id="citaMensaje"></p>
+
+    </div>
+
+    <!-- LISTA -->
+    <div id="listaCitas" class="lista"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

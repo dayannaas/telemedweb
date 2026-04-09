@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Recetas</title>
+<link rel="stylesheet" href="recetas.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <button id="btnVolver" onclick="window.location='dashboard.html'">← Volver</button>
+    <h2>Mis Recetas</h2>
+</div>
+
+<div class="container">
+
+    <!-- RECETA 1 -->
+    <div class="card">
+
+        <div class="top">
+            <h3>Paracetamol 500mg</h3>
+            <span>2025-03-15</span>
+        </div>
+
+        <p class="doctor">Dr. María González</p>
+
+        <div class="box">
+            <p><strong>Dosis:</strong></p>
+            <p>1 comprimido cada 6 horas</p>
+
+            <p><strong>Instrucciones:</strong></p>
+            <p>Tomar con alimentos. No exceder 4 comprimidos al día.</p>
+        </div>
+
+        <button id="btnDescargar1" class="btn-descargar" onclick="descargarReceta('Paracetamol 500mg')">
+            ⬇ Descargar Receta
+        </button>
+
+    </div>
+
+    <!-- RECETA 2 -->
+    <div class="card">
+
+        <div class="top">
+            <h3>Enalapril 10mg</h3>
+            <span>2025-02-20</span>
+        </div>
+
+        <p class="doctor">Dr. Carlos López</p>
+
+        <div class="box">
+            <p><strong>Dosis:</strong></p>
+            <p>1 comprimido por la mañana</p>
+
+            <p><strong>Instrucciones:</strong></p>
+            <p>Tomar en ayunas. Medir presión arterial semanalmente.</p>
+        </div>
+
+        <button id="btnDescargar2" class="btn-descargar" onclick="descargarReceta('Enalapril 10mg')">
+            ⬇ Descargar Receta
+        </button>
+
+    </div>
+
+    <p id="mensajeReceta"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
