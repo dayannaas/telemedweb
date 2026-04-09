@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(90deg, #8e24aa, #6a1b9a);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+#btnVolver {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTENEDOR */
+.container {
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* HEADER CARD */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top span {
+    color: #888;
+    font-size: 14px;
+}
+
+/* DOCTOR */
+.doctor {
+    color: #555;
+    margin: 10px 0;
+}
+
+/* BOX INTERNA */
+.box {
+    background: #f3e5f5;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* BOTÓN */
+.btn-descargar {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(90deg, #8e24aa, #6a1b9a);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* MENSAJE */
+#mensajeDescarga {
+    text-align: center;
+    margin-top: 10px;
+    color: #6a1b9a;
+    font-weight: 500;
+}

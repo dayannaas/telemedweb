@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Historia Clínica</title>
+<link rel="stylesheet" href="historia.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <button id="btnVolver" onclick="window.location='dashboard.html'">← Volver</button>
+    <h2>Historia Clínica</h2>
+</div>
+
+<!-- CONTENIDO -->
+<div class="container">
+
+    <!-- CARD 1 -->
+    <div class="card">
+        <div class="top">
+            <h3>Medicina General</h3>
+            <span>2025-03-15</span>
+        </div>
+
+        <p class="doctor">Dr. María González</p>
+
+        <div class="box">
+            <p><strong>Diagnóstico:</strong></p>
+            <p>Resfriado común</p>
+
+            <p><strong>Tratamiento:</strong></p>
+            <p>Paracetamol 500mg cada 6 horas, abundantes líquidos</p>
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+        <div class="top">
+            <h3>Cardiología</h3>
+            <span>2025-02-20</span>
+        </div>
+
+        <p class="doctor">Dr. Carlos López</p>
+
+        <div class="box">
+            <p><strong>Diagnóstico:</strong></p>
+            <p>Hipertensión arterial leve</p>
+
+            <p><strong>Tratamiento:</strong></p>
+            <p>Enalapril 10mg una vez al día, dieta baja en sodio</p>
+        </div>
+    </div>
+
+    <!-- BOTÓN -->
+    <button id="btnDescargar" onclick="descargarPDF()" class="btn-descargar">
+        ⬇ Descargar Historia Clínica (PDF)
+    </button>
+
+    <!-- MENSAJE -->
+    <p id="mensajeDescarga"></p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* HEADER */
+.header {
+    background: #1b8a3b;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header h2 {
+    flex: 1;
+    text-align: center;
+}
+
+#btnVolver {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTENEDOR */
+.container {
+    height: calc(100vh - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CHAT */
+.chat {
+    width: 100%;
+    max-width: 500px;
+    height: 80%;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* HEADER CHAT */
+.chat-header {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+
+/* BOX MENSAJES */
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+/* MENSAJE USUARIO */
+.msg-user {
+    background: #1b8a3b;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    align-self: flex-end;
+    max-width: 70%;
+}
+
+/* MENSAJE DOCTOR */
+.msg-bot {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    align-self: flex-start;
+    max-width: 70%;
+}
+
+/* INPUT */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.chat-input button {
+    margin-left: 10px;
+    background: #1b8a3b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Perfil</title>
+<link rel="stylesheet" href="perfil.css">
+</head>
+
+<body onload="cargarPerfil()">
+
+<!-- HEADER -->
+<div class="header">
+    <button id="btnVolver" onclick="window.location='dashboard.html'">← Volver</button>
+    <h2>Mi Perfil</h2>
+</div>
+
+<div class="container">
+
+    <div class="card">
+
+        <!-- PERFIL -->
+        <div class="perfil-top">
+            <div class="avatar">👤</div>
+            <div>
+                <h3 id="perfilNombreTexto">Usuario</h3>
+                <span>Paciente</span>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <label>Correo electrónico</label>
+        <input id="perfilCorreo" type="email">
+
+        <label>Teléfono</label>
+        <input id="perfilTelefono" type="text">
+
+        <hr>
+
+        <h4>Cambiar Contraseña</h4>
+
+        <label>Nueva contraseña</label>
+        <input id="perfilPassword" type="password">
+
+        <label>Confirmar contraseña</label>
+        <input id="perfilPassword2" type="password">
+
+        <button id="btnGuardarPerfil" onclick="guardarPerfil()" class="btn-guardar">
+            Guardar Cambios
+        </button>
+
+        <p id="perfilMensaje"></p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

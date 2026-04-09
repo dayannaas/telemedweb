@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro</title>
+<link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+
+<div class="container">
+  <div class="card">
+
+    <div class="icon" id="iconRegistro">👤</div>
+
+    <h1 id="tituloRegistro">Crear Cuenta</h1>
+    <p class="sub">Regístrate para comenzar</p>
+
+    <div class="form-group">
+      <label for="regNombre">Nombre completo</label>
+      <input id="regNombre" placeholder="Juan Pérez">
+    </div>
+
+    <div class="form-group">
+      <label for="regCorreo">Correo electrónico</label>
+      <input id="regCorreo" placeholder="tu@email.com">
+    </div>
+
+    <div class="form-group">
+      <label for="regTelefono">Teléfono</label>
+      <input id="regTelefono" placeholder="+57 300 000 0000">
+    </div>
+
+    <div class="form-group">
+      <label for="regPassword">Contraseña</label>
+      <input id="regPassword" type="password" placeholder="••••••••">
+    </div>
+
+    <div class="form-group">
+      <label for="regPassword2">Confirmar contraseña</label>
+      <input id="regPassword2" type="password" placeholder="••••••••">
+    </div>
+
+    <button id="btnRegistrar" onclick="registrar()">Registrarse</button>
+
+    <p id="registroMensaje"></p>
+
+    <p class="login-link">
+      ¿Ya tienes cuenta? 
+      <a id="linkLogin" href="login.html">Ingresa</a>
+    </p>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

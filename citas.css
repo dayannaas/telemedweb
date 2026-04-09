@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(90deg, #3b5ed7, #2a4dbf);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+#btnVolver {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTENEDOR */
+.container {
+    padding: 20px;
+}
+
+/* BOTON */
+.btn-agendar {
+    width: 100%;
+    padding: 15px;
+    background: #3b5ed7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* BOTON CONFIRMAR */
+.btn-confirmar {
+    margin-top: 15px;
+    padding: 12px;
+    background: #3b5ed7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* LISTA */
+.cita {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* BOTONES */
+.btn-reagendar {
+    background: orange;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+.btn-cancelar {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+/* OCULTO */
+.hidden {
+    display: none;
+}
+/* GRID MEJORADO */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /*  MÁS ESPACIO */
+    margin-top: 15px;
+}
+
+/* CAMPOS */
+.grid div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABEL */
+label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* INPUTS */
+input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: #f9fafc;
+}
+
+/* BOTON MÁS SEPARADO */
+.btn-confirmar {
+    margin-top: 25px;
+    padding: 12px;
+}
+
+/* PRUEBA */
+
+/* MÁS AIRE ENTRE CAMPOS */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px; /*  más separación */
+    margin-top: 20px;
+}
+
+/* INPUT MÁS LIMPIO */
+input, select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid #e0e6ed;
+    background: #f9fbfd;
+    transition: 0.2s;
+}
+
+/* FOCUS MÁS PRO */
+input:focus, select:focus {
+    border-color: #3b5ed7;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(59,94,215,0.1);
+}
+
+/* BOTÓN MÁS ABAJO */
+.btn-confirmar {
+    margin-top: 35px;
+}
+/* CURSOR MANITO */
+.btn-reagendar,
+.btn-cancelar {
+    cursor: pointer;
+}
+
+/* HOVER BONITO */
+.btn-reagendar:hover {
+    background: #ff9800;
+    transform: scale(1.05);
+}
+
+.btn-cancelar:hover {
+    background: #e53935;
+    transform: scale(1.05);
+}
+
+/* ANIMACIÓN SUAVE */
+button {
+    transition: all 0.2s ease;
+}
+/* BOTONES DEL FORM */
+.acciones-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn-cerrar {
+    background: #ccc;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* ESTADO VERDE */
+.estado-activo {
+    color: green;
+    font-weight: bold;
+}
+
+/* ESPACIADO CITA */
+.cita {
+    padding: 20px;
+}
+
+/* DOCTOR */
+.doctor {
+    color: #555;
+    margin: 5px 0;
+}
+/* ESTADO ACTIVO */
+.estado-activo {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* ESTADO CANCELADO */
+.estado-cancelado {
+    color: #e53935;
+    font-weight: bold;
+}
+
+/* TARJETA CANCELADA SUAVE */
+.cita.cancelada {
+    opacity: 0.6;
+    background: #f9f9f9;
+}
+
+/* TEXTO CANCELADO */
+.texto-cancelado {
+    color: #888;
+    font-size: 14px;
+}
+
+/* ELIMINAR REGISTRO */
+.btn-eliminar {
+    background: #555;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn-eliminar:hover {
+    background: black;
+}

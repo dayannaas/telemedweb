@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    height: 100vh;
+}
+
+/* HEADER */
+.header {
+    background: #1e7d73;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+#btnVolver {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTENEDOR */
+
+.container {
+    min-height: calc(100vh - 60px); /* 🔥 ocupa toda la pantalla menos header */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 🔥 CENTRADO VERTICAL */
+    padding: 20px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* PERFIL */
+.perfil-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: #b2dfdb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    background: #f9fafc;
+    box-sizing: border-box;
+}
+
+/* BOTÓN */
+.btn-guardar {
+    width: 100%;
+    padding: 14px;
+    background: #1e7d73;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* MENSAJE */
+#perfilMensaje {
+    text-align: center;
+    margin-top: 10px;
+    color: #1e7d73;
+    font-weight: 500;
+}

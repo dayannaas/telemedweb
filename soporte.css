@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(90deg, #d81b60, #ad1457);
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+#btnVolver {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* CONTENEDOR */
+
+.container {
+    min-height: calc(100vh - 60px); /* ocupa toda la pantalla menos header */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centrado vertical */
+    padding: 20px;
+}
+
+/* CARD */
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+
+/* ICONO */
+.icono {
+    font-size: 40px;
+    background: #f8bbd0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+/* SUBTEXTO */
+.sub {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* LABELS */
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+/* INPUTS */
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    background: #f9fafc;
+    box-sizing: border-box; /* 🔥 IMPORTANTÍSIMO */
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* BOTÓN */
+
+.btn-enviar {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #d81b60, #ad1457);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* MENSAJE */
+#soporteRespuesta {
+    margin-top: 15px;
+    color: #d81b60;
+    font-weight: 500;
+}
